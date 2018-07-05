@@ -3,7 +3,7 @@
 KreogCom::KreogCom(int x, int y, int serial) : _x(x), _y(y), _serial(serial)
 {
 	next = NULL;
-	std::cout << "KreogCom " << this->_serial << " initialized" << std::endl;
+	std::cout << "KreogCom " << this->_serial << " initialised" << std::endl;
 }
 
 KreogCom::~KreogCom()
