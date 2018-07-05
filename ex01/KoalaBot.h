@@ -13,8 +13,8 @@ class KoalaBot
 		void swapParts(Arms& arms);
 		void swapParts(Legs& arms);
 		void swapParts(Head& arms);
-		void informations();
-		bool status();
+		void informations() const;
+		bool status() const;
 	
 	private:
 		std::string _serial;

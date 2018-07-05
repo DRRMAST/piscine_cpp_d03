@@ -8,17 +8,17 @@ Arms::~Arms()
 {
 }
 
-bool Arms::isFunctionnal()
+bool Arms::isFunctionnal() const
 {
 	return this->_functional;
 }
 
-std::string Arms::serial()
+std::string Arms::serial() const
 {
 	return this->_serial;
 }
 
-void Arms::informations()
+void Arms::informations() const
 {
 	std::cout << "\t[Parts] Arms " << this->_serial << " status : " ;
 	if(this->isFunctionnal())
@@ -35,17 +35,17 @@ Legs::~Legs()
 {
 }
 
-bool Legs::isFunctionnal()
+bool Legs::isFunctionnal() const
 {
 	return this->_functional;
 }
 
-std::string Legs::serial()
+std::string Legs::serial() const
 {
 	return this->_serial;
 }
 
-void Legs::informations()
+void Legs::informations() const
 {
 	std::cout << "\t[Parts] Legs " << this->_serial << " status : " ;
 	if(this->isFunctionnal())
@@ -62,17 +62,17 @@ Head::~Head()
 {
 }
 
-bool Head::isFunctionnal()
+bool Head::isFunctionnal() const
 {
 	return this->_functional;
 }
 
-std::string Head::serial()
+std::string Head::serial() const
 {
 	return this->_serial;
 }
 
-void Head::informations()
+void Head::informations() const
 {
 	std::cout << "\t[Parts] Head " << this->_serial << " status : " ;
 	if(this->isFunctionnal())

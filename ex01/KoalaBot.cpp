@@ -42,15 +42,15 @@ void KoalaBot::swapParts(Head& head)
 	this->_head = head;
 	head = t;
 }
-void KoalaBot::informations()
+void KoalaBot::informations() const
 {
 	std::cout << "[KoalaBot] " << this->_serial << std::endl;
 	this->_arms.informations();
 	this->_legs.informations();
 	this->_head.informations();
 }
-bool KoalaBot::status()
+bool KoalaBot::status() const
 {
-	bool status = this->_arms.isFunctionnal() && this->_legs.isFunctionnal() && this->_head.isFunctionnal();
+	bool status = (this->_arms.isFunctionnal()) && (this->_legs.isFunctionnal()) && (this->_head.isFunctionnal());
 	return status;
 }
